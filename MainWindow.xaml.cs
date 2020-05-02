@@ -50,5 +50,12 @@ namespace OverzichtDranken
 
             dgDranken.ItemsSource = lijst;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Aanpassen go = new Aanpassen();
+            gInhoud.Children.Clear();
+            gInhoud.Children.Add(go);
+        }
     }
 }
